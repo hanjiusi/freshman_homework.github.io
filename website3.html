@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健身锻炼计划 | 塑造更好的自己</title>
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #2ecc71;
+            --dark: #333333;
+            --light: #f8f9fa;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        .header-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' https://via.placeholder.com/1200x600') center/cover no-repeat;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .lead {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #27ae60;
+            transform: translateY(-3px);
+        }
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .nav-links li a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .nav-links li a:hover {
+            color: var(--primary);
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary);
+        }
+        .package-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .package-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+        .package-header {
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .package-body {
+            padding: 30px;
+        }
+        .package-body ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        .package-body li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .package-body li:before {
+            content: "✓";
+            color: var(--secondary);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 20px 0;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ddd;
+            margin-right: 15px;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            .nav-links {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bg">
+        <div class="container">
+            <h1>健身锻炼计划</h1>
+            <p class="lead">减肥健身就和学英语一样，方法有很多，但最难的在坚持。找到适合你的方式，让健康成为习惯。</p>
+            <a href="#packages" class="btn">查看训练计划</a>
+        </div>
+    </div>
+    
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">健身俱乐部</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#packages">训练计划</a></li>
+                <li><a href="#testimonials">成功案例</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">为什么选择我们</h2>
+            <div class="package-container">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>个性化计划</h3>
+                    </div>
+                    <div class="package-body">
+                        <p>我们根据您的身体状况、健康目标和生活方式定制完全个性化的健身计划。</p>
+                        <ul>
+                            <li>一对一专业评估</li>
+                            <li>针对性训练方案</li>
+                            <li>定期进度调整</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>专业教练团队</h3>
+                    </div>
+                    <div class="package-body">
+                        <p>我们的教练拥有国际认证资质和丰富的教学经验，为您提供科学安全的指导。</p>
+                        <ul>
+                            <li>认证健身教练</li>
+                            <li>营养指导建议</li>
+                            <li>动作纠正与优化</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>全面健康支持</h3>
+                    </div>
+                    <div class="package-body">
+                        <p>不仅关注健身效果，更注重健康生活方式的培养，提供全方位的健康支持。</p>
+                        <ul>
+                            <li>饮食计划建议</li>
+                            <li>心理健康指导</li>
+                            <li>社区支持活动</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="packages" class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">训练计划套餐</h2>
+            <div class="package-container">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>初级计划</h3>
+                        <p>适合健身新手</p>
+                    </div>
+                    <div class="package-body">
+                        <ul>
+                            <li>基础体能评估</li>
+                            <li>每周3次训练计划</li>
+                            <li>基础动作教学</li>
+                            <li>饮食建议指南</li>
+                            <li>月进度评估</li>
+                        </ul>
+                        <a href="#" class="btn" style="width: 100%; text-align: center;">立即开始</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>进阶计划</h3>
+                        <p>适合有经验者</p>
+                    </div>
+                    <div class="package-body">
+                        <ul>
+                            <li>详细体能评估</li>
+                            <li>每周5次训练计划</li>
+                            <li>专项技能提升</li>
+                            <li>个性化饮食计划</li>
+                            <li>双周进度评估</li>
+                        </ul>
+                        <a href="#" class="btn" style="width: 100%; text-align: center;">立即开始</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>专业计划</h3>
+                        <p>适合高水平训练者</p>
+                    </div>
+                    <div class="package-body">
+                        <ul>
+                            <li>全面体能评估</li>
+                            <li>定制化训练方案</li>
+                            <li>竞技水平提升</li>
+                            <li>精准营养计划</li>
+                            <li>每周进度调整</li>
+                        </ul>
+                        <a href="#" class="btn" style="width: 100%; text-align: center;">立即开始</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>关于我们</h3>
+                    <p>我们致力于帮助每个人找到适合自己的健身方式，让健康生活成为习惯，而不是负担。</p>
+                </div>
+                <div>
+                    <h3>联系我们</h3>
+                    <p>电话：123-456-7890</p>
+                    <p>邮箱：info@fitnessclub.com</p>
+                    <p>地址：某市健康路123号</p>
+                </div>
+                <div>
+                    <h3>订阅资讯</h3>
+                    <p>获取最新的健康贴士和活动信息</p>
+                    <input type="email" placeholder="您的邮箱地址" style="padding: 10px; width: 100%; margin: 10px 0; border: none; border-radius: 5px;">
+                    <button class="btn" style="width: 100%;">订阅</button>
+                </div>
+            </div>
+            <p style="text-align: center; padding-top: 20px; border-top: 1px solid #444;">&copy; 2025 健身俱乐部 版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>

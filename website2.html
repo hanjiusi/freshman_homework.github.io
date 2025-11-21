@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康生活指南 | 身心平衡的艺术</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        body {
+            background-color: #FFF5FE;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #FF9A76 0%, #FF6B6B 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .nav a {
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #FF6B6B;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .nav a:hover {
+            background: #FFF8F0;
+            border-radius: 10px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #FF9A76;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            background: #FFD3B6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            background: #FFF8F0;
+            border-radius: 15px;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>健康生活指南</h1>
+            <p class="subtitle">平衡身心，拥抱活力每一天</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav class="nav">
+            <a href="#diet">饮食健康</a>
+            <a href="#exercise">科学运动</a>
+            <a href="#mind">心理健康</a>
+            <a href="#habit">良好习惯</a>
+        </nav>
+        
+        <div class="card-container">
+            <div class="card">
+                <div class="card-icon">🥗</div>
+                <h3>均衡饮食</h3>
+                <p>遵循"春芽夏瓜秋果冬根"的时令饮食原则，选择新鲜自然的食材，为身体提供全面营养。</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🚴</div>
+                <h3>适度运动</h3>
+                <p>每天保持30分钟中等强度运动，如快走、游泳或瑜伽，增强心肺功能，释放压力。</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🧠</div>
+                <h3>心理平衡</h3>
+                <p>通过冥想、阅读和社交活动保持心理健康，培养积极乐观的生活态度。</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💤</div>
+                <h3>充足睡眠</h3>
+                <p>保证7-8小时高质量睡眠，建立规律的作息时间，提升身体修复能力。</p>
+            </div>
+        </div>
+        
+        <section id="diet" style="margin: 50px 0;">
+            <h2 style="color: #FF6B6B; text-align: center; margin-bottom: 30px;">健康饮食原则</h2>
+            <div style="background: #FFF8F0; padding: 25px; border-radius: 15px;">
+                <p>健康饮食不仅仅是选择食物，更是一种生活态度：</p>
+                <ul style="margin: 15px 0; padding-left: 20px;">
+                    <li>多吃蔬菜水果，保证膳食纤维摄入</li>
+                    <li>选择全谷物而非精制碳水化合物</li>
+                    <li>适量摄入优质蛋白质，如鱼、豆类和坚果</li>
+                    <li>减少加工食品和含糖饮料的消费</li>
+                    <li>保持水分充足，每天饮用足够的水</li>
+                </ul>
+                <p>遵循"食养三味"的自然之道，让饮食成为健康的基石。</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 健康生活指南 | 拥抱健康，享受生活</p>
+        </div>
+    </footer>
+</body>
+</html>

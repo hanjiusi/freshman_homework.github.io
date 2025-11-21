@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康养生菜谱 | 食养三味·自然之道</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', serif;
+        }
+        body {
+            background: #FFF5FE;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        h1 {
+            color: #FF6B6B;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .recipe-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .recipe-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .recipe-icon {
+            width: 60px;
+            height: 60px;
+            background: #FFD3B6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-right: 15px;
+        }
+        .recipe-title {
+            color: #FF9A76;
+            font-size: 1.8rem;
+        }
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .ingredients, .instructions {
+            background: #FFF8F0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h3 {
+            color: #FF6B6B;
+            margin-bottom: 15px;
+            border-bottom: 2px dotted #FFD3B6;
+            padding-bottom: 5px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .seasonal-tips {
+            background: linear-gradient(135deg, #FF9A76 0%, #FF6B6B 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .tip-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .cooking-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .method {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .method-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .nutrition-facts {
+            background: #FFF8F0;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        .fact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .fact-item {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+        }
+        .fact-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #FF6B6B;
+        }
+        .fact-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            color: #666;
+            border-top: 1px solid #FFD3B6;
+        }
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>食养三味·自然之道</h1>
+            <p class="tagline">应时而食，遵循四时物候规律，获取食材完整生命力</p>
+        </header>
+        
+        <section class="seasonal-tips">
+            <h2 class="tip-title">秋季养生饮食指南</h2>
+            <p>秋食果，以润燥为主，多吃梨、葡萄、百合、银耳等滋润食物，少吃辛辣刺激之物。</p>
+        </section>
+        
+        <div class="recipe-card">
+            <div class="recipe-header">
+                <div class="recipe-icon">🍐</div>
+                <h2 class="recipe-title">冰糖雪梨炖银耳</h2>
+            </div>
+            <div class="recipe-content">
+                <div class="ingredients">
+                    <h3>食材准备</h3>
+                    <ul>
+                        <li>雪梨 2个</li>
+                        <li>银耳 15克</li>
+                        <li>冰糖 适量</li>
+                        <li>枸杞 10克</li>
+                        <li>清水 适量</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>制作步骤</h3>
+                    <ol>
+                        <li>银耳提前用温水泡发，去蒂撕成小朵</li>
+                        <li>雪梨去皮去核，切成小块</li>
+                        <li>将银耳、雪梨放入炖盅，加入适量清水</li>
+                        <li>隔水蒸炖1.5小时，加入冰糖和枸杞再炖15分钟</li>
+                        <li>待稍凉后即可食用</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="nutrition-facts">
+                <h3>营养小贴士</h3>
+                <p>此甜品有润肺止咳、清热生津的功效，特别适合秋季干燥季节食用。银耳富含胶质，对皮肤有保湿作用。</p>
+                <div class="fact-grid">
+                    <div class="fact-item">
+                        <div class="fact-value">120</div>
+                        <div class="fact-label">卡路里/每份</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">28g</div>
+                        <div class="fact-label">碳水化合物</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">0g</div>
+                        <div class="fact-label">脂肪</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">2g</div>
+                        <div class="fact-label">蛋白质</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cooking-methods">
+            <div class="method">
+                <div class="method-icon">🍲</div>
+                <h3>古法蒸焗</h3>
+                <p>隔水蒸/陶锅焗保留90%营养，避免美拉德反应产生的有害物质</p>
+            </div>
+            <div class="method">
+                <div class="method-icon">🌿</div>
+                <h3>本味调和</h3>
+                <p>善用天然香料替代调味品，八角/陈皮/桂叶激发食材深层甘味</p>
+            </div>
+            <div class="method">
+                <div class="method-icon">🥬</div>
+                <h3>时令食材</h3>
+                <p>春吃芽夏吃瓜，秋食果冬根茎，顺应自然规律，保留食材最佳营养</p>
+            </div>
+        </div>
+        
+        <div class="recipe-card">
+            <div class="recipe-header">
+                <div class="recipe-icon">🥕</div>
+                <h2 class="recipe-title">秋季根茎蔬菜汤</h2>
+            </div>
+            <div class="recipe-content">
+                <div class="ingredients">
+                    <h3>食材准备</h3>
+                    <ul>
+                        <li>胡萝卜 1根</li>
+                        <li>山药 200克</li>
+                        <li>莲藕 1节</li>
+                        <li>玉米 1根</li>
+                        <li>红枣 5颗</li>
+                        <li>生姜 3片</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>制作步骤</h3>
+                    <ol>
+                        <li>所有蔬菜洗净切块备用</li>
+                        <li>锅中加水烧开，放入所有食材</li>
+                        <li>大火煮沸后转小火慢炖40分钟</li>
+                        <li>加入适量盐调味即可</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="nutrition-facts">
+                <h3>养生功效</h3>
+                <p>此汤品有健脾益胃、补气养血的功效，适合夏秋交替时节食用，能增强免疫力，为冬季做好准备。</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 健康养生菜谱 | 食养三味·自然之道</p>
+            <p>遵循自然规律，吃出健康生活</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理健康与平衡 | 内在平静的艺术</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: #f0f5ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+        h1 {
+            color: #5b7cfa;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .pillar {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .pillar:hover {
+            transform: translateY(-10px);
+        }
+        .pillar-icon {
+            width: 80px;
+            height: 80px;
+            background: #e0e7ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 20px;
+        }
+        .pillar h3 {
+            color: #5b7cfa;
+            margin-bottom: 15px;
+        }
+        .meditation-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 50px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .section-title {
+            color: #5b7cfa;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        .technique {
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+            padding: 20px;
+            background: #f8faff;
+            border-radius: 10px;
+        }
+        .technique-icon {
+            font-size: 2.5rem;
+            margin-right: 20px;
+            min-width: 60px;
+        }
+        .stress-management {
+            background: linear-gradient(135deg, #5b7cfa 0%, #3b5bdb 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+        .management-tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .tip {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .tip-num {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+        .resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .resource {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .resource-img {
+            height: 150px;
+            background: #e0e7ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        .resource-content {
+            padding: 20px;
+        }
+        .resource h3 {
+            color: #5b7cfa;
+            margin-bottom: 10px;
+        }
+        .quote {
+            text-align: center;
+            font-style: italic;
+            padding: 30px;
+            margin: 40px 0;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            font-size: 1.2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #666;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .technique {
+                flex-direction: column;
+                text-align: center;
+            }
+            .technique-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>心理健康与平衡</h1>
+            <p class="subtitle">培养内在平静，建立积极心态，实现身心和谐</p>
+        </header>
+        
+        <div class="pillars">
+            <div class="pillar">
+                <div class="pillar-icon">😌</div>
+                <h3>自我觉察</h3>
+                <p>通过正念练习增强对自身情绪和思维的觉察能力，识别负面模式，培养积极心态。</p>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon">🧘</div>
+                <h3>情绪调节</h3>
+                <p>学习健康的情感表达和管理方式，建立情绪韧性，有效应对生活压力。</p>
+            </div>
+            <div class="pillar">
+                <div class="pillar-icon">🤝</div>
+                <h3>人际连接</h3>
+                <p>培养健康的人际关系，建立支持系统，增强归属感和幸福感。</p>
+            </div>
+        </div>
+        
+        <div class="meditation-section">
+            <h2 class="section-title">正念冥想练习</h2>
+            <div class="technique">
+                <div class="technique-icon">🌬️</div>
+                <div>
+                    <h3>呼吸冥想</h3>
+                    <p>专注于呼吸的自然流动，不评判不控制，当思绪飘散时温和地将注意力带回呼吸。每天练习5-10分钟，可显著降低压力水平。</p>
+                </div>
+            </div>
+            <div class="technique">
+                <div class="technique-icon">👂</div>
+                <div>
+                    <h3>身体扫描</h3>
+                    <p>循序渐进地关注身体各个部位的感觉，从脚趾到头顶，培养对身体感受的觉察，释放紧张情绪。</p>
+                </div>
+            </div>
+            <div class="technique">
+                <div class="technique-icon">💭</div>
+                <div>
+                    <h3>思维觉察</h3>
+                    <p>观察自己的思维而不卷入其中，将想法视为心理事件而非事实，减少对负面思维的认同。</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stress-management">
+            <h2 class="section-title" style="color: white;">压力管理七法</h2>
+            <div class="management-tips">
+                <div class="tip">
+                    <div class="tip-num">1</div>
+                    <p>保持规律作息，确保充足睡眠</p>
+                </div>
+                <div class="tip">
+                    <div class="tip-num">2</div>
+                    <p>定期进行身体活动，释放压力</p>
+                </div>
+                <div class="tip">
+                    <div class="tip-num">3</div>
+                    <p>培养兴趣爱好，创造快乐源泉</p>
+                </div>
+                <div class="tip">
+                    <div class="tip-num">4</div>
+                    <p>学习时间管理，避免过度承诺</p>
+                </div>
+                <div class="tip">
+                    <div class="tip-num">5</div>
+                    <p>建立支持网络，分享情感负担</p>
+                </div>
+                <div class="tip">
+                    <div class="tip-num">6</div>
+                    <p>练习说"不"，保护个人边界</p>
+                </div>
+                <div class="tip">
+                    <div class="tip-num">7</div>
+                    <p>寻求专业帮助，及时解决困扰</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quote">
+            <p>"心理健康不是目的地，而是一个持续的旅程。它关乎每天做出的选择，关乎我们如何应对挑战，如何对待自己和他人。"</p>
+        </div>
+        
+        <div class="resources">
+            <div class="resource">
+                <div class="resource-img">📚</div>
+                <div class="resource-content">
+                    <h3>推荐阅读</h3>
+                    <p>《正念的奇迹》 - 一行禅师</p>
+                    <p>《情绪智慧》 - 丹尼尔·戈尔曼</p>
+                    <p>《自卑与超越》 - 阿尔弗雷德·阿德勒</p>
+                </div>
+            </div>
+            <div class="resource">
+                <div class="resource-img">📱</div>
+                <div class="resource-content">
+                    <h3>实用工具</h3>
+                    <p>冥想应用：Calm, Headspace</p>
+                    <p>情绪追踪：Daylio, Moodnotes</p>
+                    <p>呼吸练习：Breathe, Pranayama</p>
+                </div>
+            </div>
+            <div class="resource">
+                <div class="resource-img">🌐</div>
+                <div class="resource-content">
+                    <h3>在线资源</h3>
+                    <p>心理健康知识普及平台</p>
+                    <p>在线心理咨询服务</p>
+                    <p>正念冥想指导课程</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 心理健康与平衡 | 内在平静的艺术</p>
+            <p>注意：本网站提供的信息仅供参考，如有严重心理困扰，请及时寻求专业帮助。</p>
+        </footer>
+    </div>
+</body>
+</html>

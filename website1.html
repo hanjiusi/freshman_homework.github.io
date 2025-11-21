@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>探索美好生活 - 积极向上每一天</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f7f4;
+            color: #333;
+        }
+        
+        /* 布局样式 */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* 页眉样式 */
+        header {
+            background: linear-gradient(135deg, #6a89cc 0%, #4a69bd 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        
+        /* 内容区块样式 */
+        .content-section {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #4a69bd;
+            border-left: 4px solid #4a69bd;
+            padding-left: 10px;
+        }
+        
+        /* 图文混排样式 - 使用Flexbox实现 */
+        .image-text-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .image-right {
+            flex-direction: row-reverse;
+        }
+        
+        .content-image {
+            max-width: 45%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .text-content {
+            flex: 1;
+        }
+        
+        /* 引用样式 */
+        .quote {
+            background: #f0f4ff;
+            border-left: 4px solid #6a89cc;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        
+        /* 页脚样式 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background: #4a69bd;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .image-text-container {
+                flex-direction: column;
+            }
+            
+            .content-image {
+                max-width: 100%;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>探索美好生活</h1>
+            <p class="tagline">发现生活中的小确幸，拥抱积极向上的每一天</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="content-section">
+            <h2>感恩当下</h2>
+            <div class="image-text-container">
+                <img src=" https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80 " alt="清晨阳光" class="content-image">
+                <div class="text-content">
+                    <p>生活中的美好常常隐藏在我们习以为常的日常中。清晨的阳光、一杯热茶、朋友的问候，都是值得我们感恩的小确幸。</p>
+                    <p>研究表明，每天记录三件感恩的事能够显著提升幸福感。试着开始你的感恩日记吧，你会发现生活原来如此丰富多彩。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>积极心态的力量</h2>
+            <div class="image-text-container image-right">
+                <img src=" https://images.unsplash.com/photo-1543365067-f488401f5c8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80 " alt="积极思考" class="content-image">
+                <div class="text-content">
+                    <p>积极的心态能够改变我们看待世界的方式，甚至影响我们的身体健康。面对挑战时，试着问自己："这个机会教会了我什么？"而不是"为什么这会发生在我身上？"</p>
+                    <div class="quote">
+                        "乐观是一种选择，即使在困难中，我们也能找到成长的机会。"
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2>与他人建立连接</h2>
+            <div class="image-text-container">
+                <img src=" https://images.unsplash.com/photo-1549060279-7e168fce7090?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80 " alt="人际连接" class="content-image">
+                <div class="text-content">
+                    <p>深厚的人际关系是幸福感的重要来源。花时间与家人朋友相处，参与社区活动，或者只是与陌生人分享一个微笑，都能丰富我们的生活。</p>
+                    <p>真正的连接不在于数量而在于质量，培养几个深厚的关系比拥有大量浅薄的交往更有意义。</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 探索美好生活 | 设计用于《计算机基础》课程作业</p>
+            <p>记住：每一天都是新的开始，每一刻都充满可能性</p>
+        </div>
+    </footer>
+</body>
+</html>
